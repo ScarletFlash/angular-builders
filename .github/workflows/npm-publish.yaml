@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Generate bundle for all provided Angular Builders
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: workspace
       - name: 'Unpack prepared workspace files'
@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish bundle to NPM as package
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: bundle
       - name: 'Unpack generated bundle'

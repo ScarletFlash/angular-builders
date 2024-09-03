@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check that build goes successful
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: workspace
       - name: 'Unpack prepared workspace files'
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check that code style matches defined rules
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: workspace
       - name: 'Unpack prepared workspace files'
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check that there are no spelling mistakes
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: workspace
       - name: 'Unpack prepared workspace files'
